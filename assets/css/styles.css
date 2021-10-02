@@ -391,6 +391,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .play-btn {
   width: 56px;
