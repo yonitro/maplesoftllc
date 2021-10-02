@@ -1,43 +1,45 @@
 /* latin-ext */
 @font-face {
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(../fonts/dm-sans-latin-ext-400.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(../fonts/dm-sans-latin-ext-400.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(../fonts/dm-sans-latin-400.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(../fonts/dm-sans-latin-400.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 /* latin-ext */
 @font-face {
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(../fonts/dm-sans-latin-ext-700.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(../fonts/dm-sans-latin-ext-700.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(../fonts/dm-sans-latin-700.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-
-
-
+  src: url(../fonts/dm-sans-latin-700.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
-
 
 * {
   margin: 0;
@@ -70,7 +72,10 @@ body {
   background: #312843;
 }
 /*Basic Row Col*/
-
+button {
+  outline: none;
+  border: none;
+}
 .manifest-container-fluid {
   padding: 0;
   margin: auto;
@@ -82,6 +87,9 @@ body {
   margin: auto;
   width: 100%;
   max-width: 1440px;
+}
+.mt25 {
+  margin-top: 72px;
 }
 /*Header Css*/
 
@@ -171,6 +179,9 @@ body {
   color: #ffffff;
   margin: 88px 0 40px 0;
   display: inline-block;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 .profileBox-container {
   display: flex;
@@ -294,25 +305,15 @@ body {
   letter-spacing: -0.02em;
   color: #1a161e;
   flex: none;
-  order: 1;
-  flex-grow: 0;
+  /* order: 1; */
+  /* flex-grow: 0; */
+  display: flex;
+  justify-content: space-between;
 }
 .tranding-title svg {
   margin: 0 15px 0 0;
 }
-#LearningCenter {
-  margin-bottom: 87px;
-  margin-top: 30px;
-}
-.learning-box {
-  width: 552px;
-  height: 239px;
-  background: #271e3c;
-  border-radius: 4px;
-  margin-right: 25px;
-  flex: none;
- 
-}
+
 .trend-title {
   font-family: "DM Sans";
   font-style: normal;
@@ -325,22 +326,17 @@ body {
   letter-spacing: 0.14em;
   text-transform: uppercase;
 
-  
-
   opacity: 0.8;
 }
-.trend-content{
+.trend-content {
   font-family: "DM Sans";
-font-style: normal;
-font-weight: bold;
-font-size: 20px;
-line-height: 28px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
 
-
-letter-spacing: -0.02em;
-margin: 20px 0 0 0;
-
-
+  letter-spacing: -0.02em;
+  margin: 20px 0 0 0;
 }
 .trend-footer {
   width: calc(100% - 64px);
@@ -359,20 +355,137 @@ margin: 20px 0 0 0;
   font-weight: normal;
   font-size: 12px;
   line-height: 20px;
-  
-  
+
   display: flex;
   align-items: center;
   letter-spacing: 0.04em;
- 
-  
- 
-  
 }
-.trend-footer-icon{
+.trend-footer-icon {
   width: 54px;
   height: 18px;
 
   justify-content: space-between;
   display: flex;
+}
+#LearningCenter {
+  margin-bottom: 87px;
+  margin-top: 30px;
+}
+.learning-box {
+  width: 552px;
+  height: 239px;
+  background: #faf2e9;
+  border-radius: 4px;
+  margin-right: 25px;
+  flex: none;
+  display: flex;
+
+  transition: all 3s ease;
+}
+
+.learning-box-right {
+  width: 264px;
+  height: 239px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.play-btn {
+  width: 56px;
+  height: 56px;
+  position: absolute;
+}
+.learning-box-left {
+  width: 288px;
+  height: 239px;
+  padding: 24px 32px;
+}
+.learning-title {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #716b7e;
+}
+.learning-content {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #1a161e;
+  margin: 24px 0 0 0;
+  height: 78px;
+}
+.goto-course {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #271e3c;
+  border-radius: 32px;
+  width: 172px;
+  height: 48px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.controller {
+  width: 54px;
+  height: 25px;
+
+  margin-right: 17%;
+  display: flex;
+  justify-content: space-between;
+}
+.controller-btn-left {
+  width: 18px;
+  height: 18px;
+}
+.controller-btn-right {
+  width: 18px;
+  height: 18px;
+}
+
+.support-Holder {
+  position: sticky;
+  top: 54px;
+  /* left: 19px; */
+  z-index: 100;
+  width: auto;
+  height: auto;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.9s ease;
+}
+.support {
+  width: 147px;
+  height: 47px;
+  transform: rotateZ(90deg);
+  background: #716b7e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  z-index: 100;
+  color: #fafafa;
+  position: relative;
+  left: -50px;
+  top: 49px;
+  cursor: pointer;
 }
