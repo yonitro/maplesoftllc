@@ -99,6 +99,7 @@ button {
   align-items: center;
   justify-content: left;
   position: relative;
+  height: 80px;
 }
 .topbar-content {
   height: 80px;
