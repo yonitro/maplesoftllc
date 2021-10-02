@@ -196,7 +196,7 @@ button {
 }
 .profileBox {
   width: 83.33%;
-
+  border: 1px solid #DACFC0;
   background: #fefaf5;
   border-radius: 4px;
   margin-right: 25px;
@@ -401,6 +401,7 @@ button {
   width: 288px;
   height: 239px;
   padding: 24px 32px;
+  position: relative;
 }
 .learning-title {
   font-family: DM Sans;
@@ -489,4 +490,91 @@ button {
   left: -50px;
   top: 49px;
   cursor: pointer;
+}
+
+
+.insight-content {
+  font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 40px;
+
+
+letter-spacing: -0.02em;
+
+
+color: #FFFFFF;
+  margin: 24px 0 0 0;
+  height: 78px;
+}
+.black{
+  background: #271E3C;
+}
+.teal{
+  color: #BDEBE5;
+}
+.inc-height{
+  height: 320px;
+}
+#tags {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  overflow: hidden;
+}
+.tag {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 16px;
+  height: 40px;
+  left: 527px;
+  top: 32px;
+  background: #FFFFFF;
+  border: 1px solid #D9D7DC;
+  box-sizing: border-box;
+  border-radius: 40px;
+  flex: none;
+  margin: 0px 16px 0 0;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #271E3C;
+}
+
+.tag.active {
+
+  background: #271E3C;
+
+  color: #ffffff;
+}
+
+
+
+.insight-banner-wraper {
+  width: 100%;
+  padding: 0 0 0 5%;
+  height: auto;
+  background: url("../images/banner2.jpg") no-repeat;
+  background-size: contain;
+  margin: 0 0 20px 0;
+  display: inline-block;
+}
+.text-black{
+  color:#271E3C;
+}
+
+.insightBox {
+  width: 83.33%;
+  border: 1px solid #DACFC0;
+  background: #fefaf5;
+  border-radius: 4px;
+  margin-right: 25px;
+  flex: none;
+  padding: 40px 22PX 22PX 22PX;
+  height: 500PX;
+  box-sizing: border-box;
 }
